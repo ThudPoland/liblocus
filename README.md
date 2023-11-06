@@ -1,6 +1,7 @@
 # Liblocus
 
-*Liblocus* is library for world generation, simulation and object management for 2D naval and space video games.
+*liblocus* is library for world generation, simulation and object management for 2D naval and space video games.
+*locus-visualiser* is demo program used to test functions of *liblocus* in graphics environment. It uses SFML as frontend.
 
 ## Main features
 
@@ -34,6 +35,13 @@ To build *liblocus* you need:
  - Any C++ compiler that works with C++17
  
  **More informations in future.**
+
+### Requirements for *locus-visualiser*
+Additionally, to build *locus-visualiser* you need:
+
+ - SFML 2.5+
+
+**More informations in future.**
 
 ## Build
 
