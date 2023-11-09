@@ -6,7 +6,8 @@
 ## Main features
 
 Here are main features planned for 1.0 version of library.
- - [ ] PRNG Seed provider
+ - [ ] Seeded PRNG generator
+ - [ ] TRNG generator
  - [ ] Simple extendable world generator
  - [ ] Object management in generated worlds
  - [ ] World simulation with changeable time step
@@ -27,6 +28,7 @@ Here are our inspirations:
  - Old browser MMO games with ships
  - [Cosmoteer: Starship Architect & Commander](https://store.steampowered.com/app/799600/Cosmoteer_Starship_Architect__Commander/)
  - [Sid Meier's Pirates](https://store.steampowered.com/app/3920/Sid_Meiers_Pirates/)
+ - [Mount and Blade: Bannerlord](https://store.steampowered.com/app/261550/Mount__Blade_II_Bannerlord/)
 
 ## Requirements
 To build *liblocus* you need:
@@ -42,6 +44,15 @@ Additionally, to build *locus-visualiser* you need:
  - SFML 2.5+
 
 **More informations in future.**
+
+### Requirements for development/testing
+If you want to contribute to project or fork it and et cetera, it's possible that you'll need run unit tests, so you need:
+
+ - googletest 1.12.1+ (for now it's downloaded using CMakeLists.txt)
+
+## Code of conduct?
+
+Just be respectful with other contributors/users/etc..
 
 ## Build
 
