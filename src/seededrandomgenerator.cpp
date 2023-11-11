@@ -6,6 +6,8 @@
 
 #include "seededrandomgenerator.hpp"
 
+namespace Locus {
+
 SeededRandomGenerator::SeededRandomGenerator(uint64_t seed):
 _generator(seed)
 {
@@ -33,4 +35,6 @@ int64_t SeededRandomGenerator::getRandomInteger(int64_t min, int64_t max)
 std::unique_ptr<SeededRandomGenerator> SeededRandomGenerator::spawnGenerator()
 {
     return std::make_unique<SeededRandomGenerator>(_generator());
+}
+
 }

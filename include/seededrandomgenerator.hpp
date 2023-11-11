@@ -12,6 +12,8 @@
 #include <cstdint>
 #include <memory>
 
+namespace Locus {
+
 class SeededRandomGenerator {
 public:
     SeededRandomGenerator(uint64_t seed);
@@ -23,5 +25,7 @@ public:
 private:
     std::mt19937_64 _generator;
 };
+
+}
 
 #endif //SEEDED_RANDOM_GENERATOR_HPP

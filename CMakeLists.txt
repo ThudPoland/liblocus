@@ -12,8 +12,7 @@ FetchContent_MakeAvailable(googletest)
 
 add_subdirectory(tests)
 
-add_library(locus src/placeholder.cpp
-                  src/seededrandomgenerator.cpp)
+add_library(locus src/seededrandomgenerator.cpp)
 
 target_include_directories(locus PRIVATE include/)
 
