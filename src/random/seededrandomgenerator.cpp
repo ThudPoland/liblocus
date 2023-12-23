@@ -4,7 +4,7 @@
     SŁAWOMIR KOZOK 2023
 */
 
-#include "seededrandomgenerator.hpp"
+#include "random/seededrandomgenerator.hpp"
 
 namespace Locus {
 

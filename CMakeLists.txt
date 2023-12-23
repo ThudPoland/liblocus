@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
+set(CMAKE_CXX_STANDARD 17)
+
 project(liblocus)
 
 include(FetchContent)
@@ -12,8 +14,16 @@ FetchContent_MakeAvailable(googletest)
 
 add_subdirectory(tests)
 
-add_library(locus src/seededrandomgenerator.cpp)
+add_library(locus src/random/seededrandomgenerator.cpp
+                  src/generation/namegenerator.cpp
+                  src/utils/commonnamedictionaryprovider.cpp)
 
 target_include_directories(locus PRIVATE include/)
 
 add_executable(locus-visualiser visualiser/src/main.cpp)
+
+find_package(SFML COMPONENTS graphics window system)
+
+target_link_libraries(locus-visualiser locus sfml-graphics sfml-window)
+
+target_include_directories(locus-visualiser PRIVATE include/)

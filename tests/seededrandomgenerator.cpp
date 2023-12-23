@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "seededrandomgenerator.hpp"
+#include "random/seededrandomgenerator.hpp"
 
 TEST (BasicIntegerSeededRandomGeneratorTest, BasicSeededRandomGeneratorSuite)
 {
