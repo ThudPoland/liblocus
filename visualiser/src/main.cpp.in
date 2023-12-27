@@ -43,9 +43,9 @@ int main(int argc, char** argv)
     Locus::CommonNameDictionaryProvider nameProvider;
     Locus::NameGenerator nameGenerator(nameProvider, generator);
 
-    readFromFile("/home/slawomir/MIPSO/liblocus/resources/text-generation/place-part-1.txt", part1Texts);
-    readFromFile("/home/slawomir/MIPSO/liblocus/resources/text-generation/place-part-2.txt", part2Texts);
-    readFromFile("/home/slawomir/MIPSO/liblocus/resources/text-generation/place-part-3.txt", part3Texts);
+    readFromFile("@CMAKE_SOURCE_DIR@/resources/text-generation/place-part-1.txt", part1Texts);
+    readFromFile("@CMAKE_SOURCE_DIR@/resources/text-generation/place-part-2.txt", part2Texts);
+    readFromFile("@CMAKE_SOURCE_DIR@/resources/text-generation/place-part-3.txt", part3Texts);
 
     nameProvider.addTextSource(part1Texts);
     nameProvider.addTextSource(part2Texts);

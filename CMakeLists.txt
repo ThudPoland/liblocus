@@ -20,7 +20,9 @@ add_library(locus src/random/seededrandomgenerator.cpp
 
 target_include_directories(locus PRIVATE include/)
 
-add_executable(locus-visualiser visualiser/src/main.cpp)
+configure_file(visualiser/src/main.cpp.in visualiser/src/main.cpp)
+
+add_executable(locus-visualiser ${CMAKE_BINARY_DIR}/visualiser/src/main.cpp)
 
 find_package(SFML COMPONENTS graphics window system)
 
